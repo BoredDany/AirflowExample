@@ -7,6 +7,7 @@ This repository contains an example of using Airflow to do the following process
 * Obtain user data from the API
 * Save the user data in the PostgreeSQL database
 * Work with Assets
+* Work with Flower to monitor workers
 
 ## Requirements
 
@@ -64,6 +65,11 @@ After that you'll be able to access Airflow in your browser [Here](localhost:808
 
 You´ll have to add the postgre connection through the Airflow web UI.
 
+You can execute the project with Flower with the command:
+
+´´´bash
+docker compose --profile flower up
+´´´
 
 ## Providers for Airflow
 
