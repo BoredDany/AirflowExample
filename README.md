@@ -30,7 +30,7 @@ uv venv --python 3.11
 ´´´
 
 
-### Activate virtual environmen
+### Activate virtual environment
 
 #### macOS/Linux:
 ´´´bash
