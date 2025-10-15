@@ -6,6 +6,7 @@ This repository contains an example of using Airflow to do the following process
 * Check if an API is available (https://jsonplaceholder.typicode.com/users)
 * Obtain user data from the API
 * Save the user data in the PostgreeSQL database
+* Work with Assets
 
 ## Requirements
 
@@ -80,4 +81,18 @@ To test a task without running an entire DAG and saving the run metadata, go to 
 ´´´bash
 bin/bash
 airwflow tasks test <task_name> <task_id>
+´´´
+
+## See all assets
+
+´´´bash
+bin/bash
+airwflow assets list
+´´´
+
+## Materialize an asset
+
+´´´bash
+bin/bash
+airwflow assets materialize --name <name>
 ´´´
