@@ -5,6 +5,7 @@ from time import sleep
 def celery_dag():
     
     @task
+    # Using celery executor, you can choose which queue to send the task to with the `queue` parameter
     def a():
         sleep(5)
         
