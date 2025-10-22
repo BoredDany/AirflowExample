@@ -8,6 +8,7 @@ This repository contains an example of using Airflow to do the following process
 * Save the user data in the PostgreeSQL database
 * Work with Assets
 * Branching
+* Customised decorators
 * Work with Flower to monitor workers
 
 ## Requirements

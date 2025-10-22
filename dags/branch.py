@@ -17,15 +17,15 @@ def branching_dag():
         return "different_than_1"
 
     @task()
-    def equal_1():
-        print("Equal to 1")
+    def equal_1(val: int):
+        print(f"Equal to 1: {val}")
 
     @task()
-    def different_than_1():
-        print("Not equal to 1")
+    def different_than_1(val: int):
+        print(f"Not equal to 1: {val}")
 
     val = a()
-    b(val) >> [equal_1(), different_than_1()]
+    b(val) >> [equal_1(val), different_than_1(val)]
     
     
 branching_dag()
