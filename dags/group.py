@@ -1,5 +1,7 @@
 from airflow.sdk import dag, task, task_group
 
+# This DAG is for giving an example of grouping tasks
+
 @dag
 def group():
     @task

@@ -1,6 +1,8 @@
 from airflow.sdk import asset, Asset
 from click import Context
 
+# Here we give an example of assets
+
 @asset(
    schedule="@daily",
    uri="https://jsonplaceholder.typicode.com/users", 

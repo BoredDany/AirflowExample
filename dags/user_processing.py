@@ -3,6 +3,7 @@ from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 from airflow.sdk.bases.sensor import PokeReturnValue
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
+# This dags is an example of a process to get info from an api and save it in our db
 
 @dag
 def user_processing():

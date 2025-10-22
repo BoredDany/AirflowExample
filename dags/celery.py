@@ -1,6 +1,8 @@
 from airflow.sdk import dag, task
 from time import sleep
 
+# This DAG was created to see the Celery Executor and the Workers in action
+
 @dag
 def celery_dag():
     
